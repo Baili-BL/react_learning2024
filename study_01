@@ -1,0 +1,33 @@
+//项目的根组件
+//APP——>index.js->public->index.html
+
+const count=100;
+function App1() {
+  return (
+    <div className="App">
+      this a APP
+      {100}
+      {'test'}
+      {true}
+      {count}
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div className="App">
+      this a APP
+      {100}
+      {'test'}
+      {true}
+      {count}
+      {App1()}
+      {new Date().getDate()}
+      <div style={{color:'red'}}>hhhhh </div>
+
+    </div>
+  );
+}
+
+export default App;
