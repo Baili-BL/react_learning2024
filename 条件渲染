@@ -1,0 +1,51 @@
+// const flag=false
+
+// function App() {
+//   return (
+//     <div className="App">
+//       {flag&&<h1>Hello World</h1>}
+//     </div>)
+// }
+
+// export default App;
+
+
+
+
+// const is_login=false
+
+// function App() {
+//   return (
+//     <div className="App">
+//       {is_login?<h1>Hello World</h1>:<h2>Hello World2</h2>}
+//     </div>)
+// }
+
+// export default App;
+
+
+
+//项目的根组件
+//APP——>index.js->public->index.html
+
+const count = 1
+
+function getA() {
+  if (count > 10) {
+    return <div>hello</div>}
+  else if (count > 5) 
+  { return <div>world</div> }
+    else { return <div>hello world</div> }
+
+  }
+
+
+  function App() {
+    return (
+      <div className="App">
+        <h1>判断</h1>
+        {getA()}
+      </div>
+    );
+  }
+  export default App;
